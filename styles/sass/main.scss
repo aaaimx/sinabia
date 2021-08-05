@@ -1,0 +1,30 @@
+// base
+@import './base/reset';
+@import './base/typography';
+
+//utils
+@import './utils/colors';
+@import './utils/shadows';
+@import './utils/borders';
+@import './utils/queries';
+@import './utils/utilities';
+
+//vendors
+@import './vendor/swiper';
+
+//pages
+@import './pages/home';
+
+// components
+@import './components/button';
+@import './components/header';
+@import './components/hero';
+@import './components/counter';
+@import './components/about';
+@import './components/awards';
+@import './components/section-voluntary';
+@import './components/footer';
+@import './components/mechanics';
+@import './components/rules';
+@import './components/swipper';
+@import './components/sponsors';

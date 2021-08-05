@@ -1,0 +1,124 @@
+.mechanics {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 750px;
+    background: url('./images/bg-mecanica-del-evento@2x.webp');
+    background: linear-gradient(0deg, transparent, #ffffffa8 10%), url('./images/bg-mecanica-del-evento@2x.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+    &__Title {
+        --Size-title: 35px;
+        --Max-Width: 320px;
+
+        @include responsiveQuery(large) {
+            --Size-title: 40px;
+            --Max-Width: 300px;
+        }
+
+        font-family: 'Bebas Neue';
+        text-align: center;
+        color: $main-color;
+        max-width: var(--Max-Width);
+        font-size: var(--Size-title);
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__Separator {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 5px;
+        width: 300px;
+        background: linear-gradient(
+            90deg,
+            #800000 0.01%,
+            #990606cc 14.55%,
+            #ac1212 38.82%,
+            #a74545 54.92%,
+            #d37777 56.27%,
+            #62b9eb 77.54%,
+            #4555e7 92.6%,
+            #0019fd 99.98%
+        );
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+$heading-color: rgb(125, 175, 190);
+$description-title-color: rgb(255, 255, 255);
+$default-text-color: rgb(53, 53, 63);
+$background-color-2: rgb(55, 154, 184);
+$background-color-3: rgb(125, 175, 190);
+$round-border: 10px;
+$text-left-padding: 10px;
+$title-font: 'Pacifico', cursive;
+$body-font: 'Oswald', sans-serif;
+
+.main-content {
+    margin: 40px 30% 40px 30%;
+    width: 80vw;
+    max-width: 61.25rem;
+    height: 400px;
+
+    .description-title {
+        display: flex;
+        line-height: 30px;
+        justify-content: space-between;
+        background-color: $text-white-color;
+
+        padding-left: $text-left-padding;
+        line-height: 70px;
+        border-radius: 2px;
+        transition: 0.3s;
+
+        font-family: 'Bebas Neue';
+        text-align: left;
+        font-size: 21.54px;
+        color: $main-color;
+        padding-right: 30px;
+        padding-left: 30px;
+
+        border-left: 1px solid #69156a;
+        border-right: 1px solid #69156a;
+
+        &-up {
+            border-top: 1px solid #69156a;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .expand-collapse {
+        float: right;
+        margin-right: 8px;
+    }
+
+    .description {
+        font-size: 14px;
+        color: $default-text-color;
+        background-color: $text-white-color;
+        font-family: 'Multi';
+        font-weight: 600;
+        max-height: 0;
+        overflow: hidden;
+        margin-left: 0px;
+        padding-left: $text-left-padding;
+        transition: max-height 0.2s ease-out;
+        border-left: 1px solid #69156a;
+        border-right: 1px solid #69156a;
+        border-bottom: 1px solid #69156a;
+        padding-right: 30px;
+        padding-left: 30px;
+        text-align: justify;
+
+        p {
+            margin-top: 4px;
+        }
+    }
+}

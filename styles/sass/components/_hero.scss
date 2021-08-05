@@ -1,0 +1,106 @@
+.hero {
+    height: max-content;
+    background: url('./images/sinabia-bg.png');
+    background: linear-gradient(0deg, transparent, #00000087 0%), url('./images/sinabia-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    padding: 6.25rem 3.438rem;
+
+    &__container {
+        max-width: 61.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__title,
+    &__slogan {
+        border: none;
+        color: #fff;
+    }
+
+    &__title {
+        margin-top: 0;
+        font-size: 35.9765px;
+        line-height: 42px;
+        &__subtitle {
+            margin-top: 25px;
+            font-size: 31.17px;
+            line-height: 37px;
+        }
+    }
+
+    &__slogan {
+        margin-top: 30px;
+        font-size: 21.17px;
+        line-height: 24.81px;
+        font-weight: 400;
+        max-width: 470px;
+    }
+
+    &__icons {
+        margin-top: 30px;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10rem;
+        width: 60px;
+        height: 60px;
+        margin: 1rem 2.813rem 1rem 0;
+
+        &:nth-child(3) {
+            img {
+                margin-bottom: -0.5rem;
+            }
+        }
+
+        img {
+            width: 55%;
+        }
+    }
+
+    .btn {
+        margin: 4.063rem 1.5rem 1rem 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .hero {
+        &__title,
+        &__slogan {
+            text-align: center;
+        }
+
+        &__slogan {
+            margin: 1rem 0;
+        }
+
+        &__icons {
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &__icon {
+            margin: 1rem;
+        }
+
+        &__buttons {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            margin: 1rem 0;
+        }
+    }
+}

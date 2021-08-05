@@ -1,0 +1,37 @@
+{
+  "name": "landing-evento-2021",
+  "version": "1.0.0",
+  "description": "Landing para evento de tech 2021",
+  "private": true,
+  "scripts": {
+    "dev": "run-p scss:watch serve",
+    "build": "npm run scss:build",
+    "serve": "live-server public",
+    "format": "prettier --write ./**/*.{html,scss}",
+    "scss:build": "sass ./styles/sass/main.scss public/main.css --style compressed --no-source-map",
+    "scss:watch": "sass --watch ./styles/sass/main.scss public/main.css --no-source-map --no-stop-on-error"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comunidad-de-Programadores/landing-evento-2021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Comunidad-de-Programadores/landing-evento-2021/issues"
+  },
+  "homepage": "https://github.com/Comunidad-de-Programadores/landing-evento-2021#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.6",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.4"
+  },
+  "dependencies": {
+    "esbuild": "^0.8.33"
+  }
+}

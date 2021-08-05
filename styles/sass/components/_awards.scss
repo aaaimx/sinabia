@@ -1,5 +1,5 @@
 .awards {
-    background: url('./images/bg-premiacion@2x.webp');
+    background: url('./images/community.jpg');
     background: linear-gradient(
             90deg,
             rgba(82, 30, 135, 0.8) 0%,
@@ -11,9 +11,9 @@
             rgba(235, 170, 14, 0.8) 91.4%,
             rgba(241, 180, 6, 0.8) 99.97%
         ),
-        url('./images/bg-premiacion@2x.webp');
+        url('./images/community.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     padding-top: 5rem;
     padding-bottom: 5rem;

@@ -18,12 +18,7 @@
     }
 }
 .section__voluntary {
-    background: linear-gradient(
-        90deg,
-        $main-color,
-        rgba(83, 83, 83, 0.8),
-        $second-color
-    );
+    background: linear-gradient(90deg, $main-color, rgba(83, 83, 83, 0.8), $second-color);
     background-size: cover;
     padding: 2rem;
     margin-bottom: 1rem;

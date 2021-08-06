@@ -1,306 +1,358 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#69156A" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#69156A" />
+        <title>SINABIA 2021</title>
+        <meta
+            name="description"
+            content="Participa del primer festival de código en hispanoamérica hecho por desarrolladores, para desarrolladores"
+        />
 
-    <title>SINABIA 2021</title>
-    <meta name="description"
-        content="Participa del primer festival de código en hispanoamérica hecho por desarrolladores, para desarrolladores" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+        <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+        <link rel="apple-touch-icon" href="favicon.png" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
-    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
-    <link rel="apple-touch-icon" href="favicon.png" />
+        <meta name="twitter:creator" content="@comfeco" />
+        <meta name="twitter:card" content="summary" />
 
-    <meta name="twitter:creator" content="@comfeco" />
-    <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.comfeco.com/" />
+        <meta property="og:title" content="SINABIA 2021" />
+        <meta property="og:image" content="https://www.comfeco.com/images/maskable_icon.png" />
+        <meta
+            property="og:description"
+            content="Participa del primer festival de código en hispanoamérica hecho por desarrolladores, para desarrolladores"
+        />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.comfeco.com/" />
-    <meta property="og:title" content="SINABIA 2021" />
-    <meta property="og:image" content="https://www.comfeco.com/images/maskable_icon.png" />
-    <meta property="og:description"
-        content="Participa del primer festival de código en hispanoamérica hecho por desarrolladores, para desarrolladores" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+        <link
+            rel="preload"
+            href="./fonts/Multi/Multi-Regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="./fonts/Multi/Multi-SemiBold.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link rel="preload" href="./fonts/Play/Play-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
-    <link rel="preload" href="./fonts/Multi/Multi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="./fonts/Multi/Multi-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="./fonts/Play/Play-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+        <link rel="preload" href="./js/swiper.js" as="script" />
+        <link rel="preload" href="./js/main.js" as="script" />
+        <link rel="preload" href="./js/swipersponsors.js" as="script" />
+        <link rel="preload" href="./js/swiperleaders.js" as="script" />
 
-    <link rel="preload" href="./js/swiper.js" as="script" />
-    <link rel="preload" href="./js/main.js" as="script" />
-    <link rel="preload" href="./js/swipersponsors.js" as="script" />
-    <link rel="preload" href="./js/swiperleaders.js" as="script" />
+        <link rel="preload" href="main.css" as="style" />
+        <link rel="stylesheet" href="main.css" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEHRSZVQ74"></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
 
-    <link rel="preload" href="main.css" as="style" />
-    <link rel="stylesheet" href="main.css" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QEHRSZVQ74"></script>
-    <script>
-        window.dataLayer = window.dataLayer || []
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        gtag('js', new Date())
+            gtag('config', 'G-QEHRSZVQ74')
+        </script>
+    </head>
 
-        gtag('config', 'G-QEHRSZVQ74')
-    </script>
-</head>
-
-<body>
-    <header class="header">
-        <img src="./images/logo.png" width="300px" alt="Logo" />
-        <p class="header__title">2do Simposio Nacional de Bioingenieria e Inteligencia Artificial</p>
-        <a rel="noopener noreferrer" target="_blank" class="btn btn__fill" href="https://www.patreon.com/comfeco">Registrarme</a>
-    </header>
-    <hr class="header__separator" />
-    <section class="hero">
-        <div class="hero__container">
-            <h1 class="hero__title">SINABIA 2021</h1>
-            <h2 class="hero__title hero__title__subtitle">2do Simposio Nacional de Bioingenieria e Inteligencia
-                Artificial</h2>
-            <p class="hero__slogan">
-                Del 9 al 13 de septiembre, con sede en el Instituto Tecnológico de mérida, en modalidad mixta (Virtual y
-                presencial)
-            </p>
-            <div class="hero__icons">
-                <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="https://www.aaai.org">
-                    <img src="./icons/aaai.png" title="AAAI" alt="AAAI" />
-                </a>
-                <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="http://aaaimx.org">
-                    <img src="./icons/aaaimx.png" title="AAAIMX" alt="AAAIMX" />
-                </a>
-                <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="https://www.itmerida.mx">
-                    <img src="./icons/tec.png" title="ITM" alt="ITM" />
-                </a>
-                <a class="hero__icon" target="_blank" rel="noopener noreferrer"
-                    href="https://www.facebook.com/AAAI-MX-Bioengineering-Division-110319147115694/">
-                    <img src="./icons/dibio.png" title="División de Bioingeniería" alt="Bioingenieria" />
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <h2 class="about__title">Sobre el evento</h2>
-        <hr class="about__separator" />
-        <div>
-            <p class="about__paragraph">
-                El Simposio Nacional de Bioingeniería e Inteligencia Artificial (<strong>SINABIA</strong>) es un evento
-                organizado por el Capítulo Estudiantil de la <i>Association for the Advancement of Artificial
-                    Intelligence</i> (AAAI) con sede en México (<b>AAAIMX</b>). Organizado por primera vez en 2019, su
-                objetivo es acercar a los estudiantes al área de la Inteligencia Artificial (IA) y sus potenciales
-                aplicaciones en ingeniería, particularmente biongenierías, entre las cuales destacan
-                biomédica, mecatrónica, robótica, electrónica, química, sistemas computacionales, y
-                biotecnología. El SINABIA tiene también el propósito de contribuir a <b>causas sociales</b> a través
-                del apoyo a organizaciones locales y estatales.
-            </p>
-            <img src="./favicon.png" width="300px" title="Code" alt="Code" />
-        </div>
-        <button class="btn btn__fill">
-            <a rel="noopener noreferrer" target="_blank"
-                href="SINABIA_2021.pdf">Conocer más</a>
-        </button>
-    </section>
-
-    <section class="awards">
-        <article>
-            <h2 class="awards__title">Talleres, conferencias y actividades confirmadas</h2>
-
-            <div></div>
-
-            <p class="awards__message">¿Quieres saber que nos espera este año?</p>
-
-            <button class="btn btn__fill">
-                <a rel="noopener noreferrer" target="_blank"
-                    href="https://www.notion.so/Sponsors-7da22791ec9c41739ccb2a6b64049098">Ver programa</a>
-            </button>
-        </article>
-    </section>
-
-    <section class="about">
-        <h2 class="about__title">Artificial Intelligence Journal</h2>
-        <hr class="about__separator" />
-        <div>
-            <p class="about__paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem laudantium, quod, nesciunt,
-                suscipit consequatur aliquam dignissimos quae explicabo nobis doloribus quibusdam nulla accusantium
-                delectus distinctio soluta reprehenderit harum tempore.
-            </p>
-            <img src="./images/aij.png" width="300px" title="Code" alt="Code" />
-        </div>
-        <button class="btn btn__fill">
-            <a rel="noopener noreferrer" target="_blank"
-                href="https://tinyurl.com/conocenos-Organizadores">Conócenos</a>
-        </button>
-    </section>
-
-    <section class="mechanics">
-        <h2 class="mechanics__Title">Preguntas frecuentes</h2>
-        <hr class="mechanics__Separator" />
-
-        <dl class="main-content">
-            <dt class="description-title description-title-up">
-                ¿Cuando se llevara a cabo el SINABIA? <span class="expand-collapse"> &plus;</span>
-            </dt>
-            <dd class="description description-open">
-                El SINABIA 2021 se llevará a cabo del 9 al 13 de septiembre
-                en la sede del AAAIMX, el Tecnológico Nacional de México
-                (TecNM) / Instituto Tecnológico de Mérida (ITM) en
-                modalidad mixta, tanto virtual como presencial (en la medida
-                que las condiciones epidemiológicas relacionadas con la
-                pandemia COVID-19 lo permitan), con el apoyo de la AAAI,
-                particularmente de la revista Artificial Intelligence Journal
-                (AIJ), y del TecNM/ITM.
-            </dd>
-            <dt class="description-title">Cuanto cuesta el evento para miembros del capitulo <span class="expand-collapse"> &plus;</span></dt>
-            <dd class="description">
-                Para miembros del  Capítulo estudiantil  AAAIMXy,  en  agradecimiento  a  su labor durante la presente pandemia, para el personal médico el evento es 100% gratuito
-            </dd>
-            <dt class="description-title">Cual es el costo para estudiantes <span class="expand-collapse"> &plus;</span></dt>
-            <dd class="description">
-                Para miembros del  Capítulo estudiantil  AAAIMXy,  en  agradecimiento  a  su labor durante la presente pandemia, para el personal médico el evento es 100% gratuito
-            </dd>
-            <dt class="description-title">Cual es el costo para externos <span class="expand-collapse"> &plus;</span></dt>
-            <dd class="description">
-                Para  externos  el  evento  tendrá una cuota  de  recuperación  de  $50en  forma  de donativopara cualquiera de las organizaciones a las cuales se ayudará.
-            </dd>
-            <dt class="description-title">Que organizaciones recibiran los donativos? <span class="expand-collapse"> &plus;</span></dt>
-            <dd class="description">
-                <ul>
-                    <li>Rescate Zarigüeyal(confirmado)</li>
-                    <li>Asociación Hogar de Ángeles IAP(pendiente)</li>
-                    <li>Casa Hogar Luisa María Clar, A.C(pendiente)</li>
-                    <li>Asilo Brunet Celarain(pendiente)</li>
-                    <li>Huellitas de amor(pendiente)</li>
-                </ul>
-            </dd>
-        </dl>
-    </section>
-    <section class="container rules__container">
-        <div class="rules__img">
-            <img src="https://www.ambitojuridico.com/sites/default/files/covid-temperatura-bioseguridadfreepik.jpg" alt="Imagen sobre Reglas" />
-        </div>
-        <div class="rules__content">
-            <h2 class="rules__content__title">Protocolos de bioseguridad</h2>
-            <div class="separator"></div>
-            <p>Por motivos de la pandemia COVID-19, para los eventos del SINABIA 2021 que puedan
-                llevarse a cabo de manera presencial, se contará con diferentes módulos y filtros de
-                sanitización. Las ponencias y talleres presenciales tendrán un cupo máximo de 15 personas,
-                mientras que en los virtuales se tendrá una audiencia máxima de 50 personas. Sin embargo,
-                se contará con transmisiones en vivo por Facebook para el público en general. <br><br>
-                Las medidas sanitarias para ingresar a las actividades presenciales del evento incluyen:</p> <br>
-            <div class="rules__item">
-                <img src="./icons/check.svg" alt="Icono de regla" />
-                <p>Uso adecuado del cubrebocas.</p>
-            </div>
-            <div class="rules__item">
-                <img src="./icons/check.svg" alt="Icono de regla" />
-                <p>
-                    No presentar ningún síntoma asociado a la enfermedad COVID-19.
+    <body>
+        <header class="header">
+            <img src="./images/logo.png" width="300px" alt="Logo" />
+            <p class="header__title">2do Simposio Nacional de Bioingenieria e Inteligencia Artificial</p>
+            <a rel="noopener noreferrer" target="_blank" class="btn btn__fill" href="https://www.patreon.com/comfeco"
+                >Registrarme</a
+            >
+        </header>
+        <hr class="header__separator" />
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">SINABIA 2021</h1>
+                <h2 class="hero__title hero__title__subtitle">
+                    2do Simposio Nacional de Bioingenieria e Inteligencia Artificial
+                </h2>
+                <p class="hero__slogan">
+                    Del 9 al 13 de septiembre, con sede en el Instituto Tecnológico de mérida, en modalidad mixta
+                    (Virtual y presencial)
                 </p>
-            </div>
-            <div class="rules__item">
-                <img src="./icons/check.svg" alt="Icono de regla" />
-                <p>
-                    Pasar por los filtros de sanitización.
-                </p>
-            </div>
-            <div class="rules__item">
-                <img src="./icons/check.svg" alt="Icono de regla" />
-                <p>
-                    Mantener la sana distancia.
-                </p>
-            </div>
-            <div class="rules__buttons"></div>
-        </div>
-    </section>
-    <section class="awards">
-        <article>
-            <h2 class="awards__title">Premiación</h2>
-
-            <div></div>
-
-            <p class="awards__message">¿Quieres apoyar el evento?</p>
-
-            <button class="btn btn__fill">
-                <a rel="noopener noreferrer" target="_blank"
-                    href="https://www.notion.so/Sponsors-7da22791ec9c41739ccb2a6b64049098">Ser Sponsor</a>
-            </button>
-        </article>
-    </section>
-
-    <section class="swiperSection">
-        <span class="swiperSection__title">SPEAKERS</span>
-        <hr class="swiperSection__separator" />
-        <div class="swiper-container">
-            <!-- <div id="swiperContainer" class="swiper-wrapper"></div> -->
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-    <section class="swiperSection">
-        <span class="swiperSection__title">SPONSORS OFICIALES</span>
-        <hr class="swiperSection__separator" />
-        <div id="swiperContainer2" class="sponsors"></div>
-    </section>
-
-    <section class="section__main__content">
-        <div class="section__voluntary">
-            <h3 class="section__voluntary__title">¿Quieres ser voluntario?</h3>
-            <p class="section__voluntary__description">
-                Únete a nosotros y se voluntario para colaborar en cualquier área que desees
-            </p>
-            <button class="btn">
-                <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/nc9AKAGbgswwSyVq6">Quiero ser
-                    voluntario</a>
-            </button>
-        </div>
-        <!-- <h4 class="section-CTA">{ ¡A codear! }</h4> -->
-    </section>
-    <footer class="footer__main__content">
-        <div class="container socials">
-            <p>Copyright ©2020 Developed by Webcion & StacklyCode</p>
-            <div class="socials__content">
-                <span>Síguenos en las redes</span>
-                <div class="footer__socials__container">
-                    <a rel="noopener noreferrer" target="_blank" class="footer__social__link"
-                        href="https://www.facebook.com/groups/2637132626546045">
-                        <img src="./icons/facebook.svg" alt="icono-facebook" />
+                <div class="hero__icons">
+                    <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="https://www.aaai.org">
+                        <img src="./icons/aaai.png" title="AAAI" alt="AAAI" />
                     </a>
-                    <a rel="noopener noreferrer" target="_blank" class="footer__social__link"
-                        href="https://discord.gg/5Bb5yvzNPr">
-                        <img src="./icons/discord.svg" alt="icono-instagram" />
+                    <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="http://aaaimx.org">
+                        <img src="./icons/aaaimx.png" title="AAAIMX" alt="AAAIMX" />
                     </a>
-                    <a rel="noopener noreferrer" target="_blank" class="footer__social__link"
-                        href="https://www.youtube.com/channel/UC0oi8uH1vxDcyt7b_3iByew">
-                        <img src="./icons/youtube-icon.svg" alt="icono-facebook" />
+                    <a class="hero__icon" target="_blank" rel="noopener noreferrer" href="https://www.itmerida.mx">
+                        <img src="./icons/tec.png" title="ITM" alt="ITM" />
+                    </a>
+                    <a
+                        class="hero__icon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://www.facebook.com/AAAI-MX-Bioengineering-Division-110319147115694/"
+                    >
+                        <img src="./icons/dibio.png" title="División de Bioingeniería" alt="Bioingenieria" />
                     </a>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
-<script src="./js/swiper.js"></script>
-<script src="./js/main.js"></script>
-<script src="./js/swiperleaders.js"></script>
-<script src="./js/swipersponsors.js"></script>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>
-    window.fbAsyncInit = function () {
-        FB.init({
-            xfbml: true,
-            version: 'v9.0',
-        })
-    }
-        ; (function (d, s, id) {
+        </section>
+        <section class="about">
+            <h2 class="about__title">Sobre el evento</h2>
+            <hr class="about__separator" />
+            <div>
+                <p class="about__paragraph">
+                    El Simposio Nacional de Bioingeniería e Inteligencia Artificial (<strong>SINABIA</strong>) es un
+                    evento organizado por el Capítulo Estudiantil de la
+                    <i>Association for the Advancement of Artificial Intelligence</i> (AAAI) con sede en México
+                    (<b>AAAIMX</b>). Organizado por primera vez en 2019, su objetivo es acercar a los estudiantes al
+                    área de la Inteligencia Artificial (IA) y sus potenciales aplicaciones en ingeniería,
+                    particularmente biongenierías, entre las cuales destacan biomédica, mecatrónica, robótica,
+                    electrónica, química, sistemas computacionales, y biotecnología. El SINABIA tiene también el
+                    propósito de contribuir a <b>causas sociales</b> a través del apoyo a organizaciones locales y
+                    estatales.
+                </p>
+                <img src="./favicon.png" width="300px" title="Code" alt="Code" />
+            </div>
+            <button class="btn btn__fill">
+                <a rel="noopener noreferrer" target="_blank" href="SINABIA_2021.pdf">Conocer más</a>
+            </button>
+        </section>
+
+        <section class="awards">
+            <article>
+                <h2 class="awards__title">Talleres, conferencias y actividades confirmadas</h2>
+
+                <div></div>
+
+                <p class="awards__message">¿Quieres saber que nos espera este año?</p>
+
+                <button class="btn btn__fill">
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://www.notion.so/Sponsors-7da22791ec9c41739ccb2a6b64049098"
+                        >Ver programa</a
+                    >
+                </button>
+            </article>
+        </section>
+
+        <section class="about">
+            <h2 class="about__title">Artificial Intelligence Journal</h2>
+            <hr class="about__separator" />
+            <div>
+                <p class="about__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe dolorem laudantium, quod, nesciunt,
+                    suscipit consequatur aliquam dignissimos quae explicabo nobis doloribus quibusdam nulla accusantium
+                    delectus distinctio soluta reprehenderit harum tempore.
+                </p>
+                <img src="./images/aij.png" width="300px" title="Code" alt="Code" />
+            </div>
+            <button class="btn btn__fill">
+                <a rel="noopener noreferrer" target="_blank" href="https://tinyurl.com/conocenos-Organizadores"
+                    >Conócenos</a
+                >
+            </button>
+        </section>
+
+        <section class="mechanics">
+            <h2 class="mechanics__Title">Preguntas frecuentes</h2>
+            <hr class="mechanics__Separator" />
+
+            <dl class="main-content">
+                <dt class="description-title description-title-up">
+                    ¿Cuando se llevara a cabo el SINABIA? <span class="expand-collapse"> &plus;</span>
+                </dt>
+                <dd class="description description-open">
+                    El SINABIA 2021 se llevará a cabo del 9 al 13 de septiembre en la sede del AAAIMX, el Tecnológico
+                    Nacional de México (TecNM) / Instituto Tecnológico de Mérida (ITM) en modalidad mixta, tanto virtual
+                    como presencial (en la medida que las condiciones epidemiológicas relacionadas con la pandemia
+                    COVID-19 lo permitan), con el apoyo de la AAAI, particularmente de la revista Artificial
+                    Intelligence Journal (AIJ), y del TecNM/ITM.
+                </dd>
+                <dt class="description-title">
+                    Cuanto cuesta el evento para miembros del capitulo <span class="expand-collapse"> &plus;</span>
+                </dt>
+                <dd class="description">
+                    Para miembros del Capítulo estudiantil AAAIMXy, en agradecimiento a su labor durante la presente
+                    pandemia, para el personal médico el evento es 100% gratuito
+                </dd>
+                <dt class="description-title">
+                    Cual es el costo para estudiantes <span class="expand-collapse"> &plus;</span>
+                </dt>
+                <dd class="description">
+                    Para miembros del Capítulo estudiantil AAAIMXy, en agradecimiento a su labor durante la presente
+                    pandemia, para el personal médico el evento es 100% gratuito
+                </dd>
+                <dt class="description-title">
+                    Cual es el costo para externos <span class="expand-collapse"> &plus;</span>
+                </dt>
+                <dd class="description">
+                    Para externos el evento tendrá una cuota de recuperación de $50en forma de donativopara cualquiera
+                    de las organizaciones a las cuales se ayudará.
+                </dd>
+                <dt class="description-title">
+                    Que organizaciones recibiran los donativos? <span class="expand-collapse"> &plus;</span>
+                </dt>
+                <dd class="description">
+                    <ul>
+                        <li>Rescate Zarigüeyal(confirmado)</li>
+                        <li>Asociación Hogar de Ángeles IAP(pendiente)</li>
+                        <li>Casa Hogar Luisa María Clar, A.C(pendiente)</li>
+                        <li>Asilo Brunet Celarain(pendiente)</li>
+                        <li>Huellitas de amor(pendiente)</li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+        <section class="container rules__container">
+            <div class="rules__img">
+                <img
+                    src="https://www.ambitojuridico.com/sites/default/files/covid-temperatura-bioseguridadfreepik.jpg"
+                    alt="Imagen sobre Reglas"
+                />
+            </div>
+            <div class="rules__content">
+                <h2 class="rules__content__title">Protocolos de bioseguridad</h2>
+                <div class="separator"></div>
+                <p>
+                    Por motivos de la pandemia COVID-19, para los eventos del SINABIA 2021 que puedan llevarse a cabo de
+                    manera presencial, se contará con diferentes módulos y filtros de sanitización. Las ponencias y
+                    talleres presenciales tendrán un cupo máximo de 15 personas, mientras que en los virtuales se tendrá
+                    una audiencia máxima de 50 personas. Sin embargo, se contará con transmisiones en vivo por Facebook
+                    para el público en general. <br /><br />
+                    Las medidas sanitarias para ingresar a las actividades presenciales del evento incluyen:
+                </p>
+                <br />
+                <div class="rules__item">
+                    <img src="./icons/check.svg" alt="Icono de regla" />
+                    <p>Uso adecuado del cubrebocas.</p>
+                </div>
+                <div class="rules__item">
+                    <img src="./icons/check.svg" alt="Icono de regla" />
+                    <p>No presentar ningún síntoma asociado a la enfermedad COVID-19.</p>
+                </div>
+                <div class="rules__item">
+                    <img src="./icons/check.svg" alt="Icono de regla" />
+                    <p>Pasar por los filtros de sanitización.</p>
+                </div>
+                <div class="rules__item">
+                    <img src="./icons/check.svg" alt="Icono de regla" />
+                    <p>Mantener la sana distancia.</p>
+                </div>
+                <div class="rules__buttons"></div>
+            </div>
+        </section>
+        <section class="awards">
+            <article>
+                <h2 class="awards__title">Premiación</h2>
+
+                <div></div>
+
+                <p class="awards__message">¿Quieres apoyar el evento?</p>
+
+                <button class="btn btn__fill">
+                    <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href="https://www.notion.so/Sponsors-7da22791ec9c41739ccb2a6b64049098"
+                        >Ser Sponsor</a
+                    >
+                </button>
+            </article>
+        </section>
+
+        <section class="swiperSection">
+            <span class="swiperSection__title">SPEAKERS</span>
+            <hr class="swiperSection__separator" />
+            <div class="swiper-container">
+                <!-- <div id="swiperContainer" class="swiper-wrapper"></div> -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="swiperSection">
+            <span class="swiperSection__title">SPONSORS OFICIALES</span>
+            <hr class="swiperSection__separator" />
+            <div id="swiperContainer2" class="sponsors"></div>
+        </section>
+
+        <section class="section__main__content">
+            <div class="section__voluntary">
+                <h3 class="section__voluntary__title">¿Quieres ser voluntario?</h3>
+                <p class="section__voluntary__description">
+                    Únete a nosotros y se voluntario para colaborar en cualquier área que desees
+                </p>
+                <button class="btn">
+                    <a rel="noopener noreferrer" target="_blank" href="https://forms.gle/nc9AKAGbgswwSyVq6"
+                        >Quiero ser voluntario</a
+                    >
+                </button>
+            </div>
+            <!-- <h4 class="section-CTA">{ ¡A codear! }</h4> -->
+        </section>
+        <footer class="footer__main__content">
+            <div class="container socials">
+                <p>Copyright ©2020 Developed by Webcion & StacklyCode</p>
+                <div class="socials__content">
+                    <span>Síguenos en las redes</span>
+                    <div class="footer__socials__container">
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            class="footer__social__link"
+                            href="https://www.facebook.com/groups/2637132626546045"
+                        >
+                            <img src="./icons/facebook.svg" alt="icono-facebook" />
+                        </a>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            class="footer__social__link"
+                            href="https://discord.gg/5Bb5yvzNPr"
+                        >
+                            <img src="./icons/discord.svg" alt="icono-instagram" />
+                        </a>
+                        <a
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            class="footer__social__link"
+                            href="https://www.youtube.com/channel/UC0oi8uH1vxDcyt7b_3iByew"
+                        >
+                            <img src="./icons/youtube-icon.svg" alt="icono-facebook" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/swiperleaders.js"></script>
+    <script src="./js/swipersponsors.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v9.0',
+            })
+        }
+        ;(function (d, s, id) {
             var js,
                 fjs = d.getElementsByTagName(s)[0]
             if (d.getElementById(id)) return
@@ -309,9 +361,8 @@
             js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js'
             fjs.parentNode.insertBefore(js, fjs)
         })(document, 'script', 'facebook-jssdk')
-</script>
+    </script>
 
-<!-- Your Chat Plugin code -->
-<div class="fb-customerchat" attribution="setup_tool" page_id="332757354629873"></div>
-
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="332757354629873"></div>
 </html>

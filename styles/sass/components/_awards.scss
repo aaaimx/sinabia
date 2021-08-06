@@ -1,12 +1,6 @@
 .awards {
     background: url('./images/community.jpg');
-    background: linear-gradient(
-            90deg,
-            $main-color,
-            rgba(83, 83, 83, 0.8),
-            $second-color
-        ),
-        url('./images/community.jpg');
+    background: linear-gradient(90deg, $main-color, rgba(83, 83, 83, 0.8), $second-color), url('./images/community.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

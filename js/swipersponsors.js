@@ -1,13 +1,13 @@
 const dataSponsors = [
     {
-        name: 'huawei',
-        img: './images/sponsors/sponsor-huawei.webp',
+        name: 'IISE',
+        img: './images/sponsors/iise.png',
         link: 'https://developer.huawei.com/consumer/en/',
     },
     {
-        name: 'Fernando Herrera',
-        img: './images/sponsors/sponsor-fernando_herrera.webp',
-        link: 'https://www.udemy.com/user/550c38655ec11/',
+        name: 'CESA ITM',
+        img: './images/sponsors/cesa.png',
+        link: 'https://www.facebook.com/CESAITMID',
     },
     {
         name: 'Stackly Code',

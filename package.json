@@ -9,7 +9,9 @@
     "serve": "live-server public",
     "format": "prettier --write ./**/*.{html,scss}",
     "scss:build": "sass ./styles/sass/main.scss public/main.css --style compressed --no-source-map",
-    "scss:watch": "sass --watch ./styles/sass/main.scss public/main.css --no-source-map --no-stop-on-error"
+    "scss:watch": "sass --watch ./styles/sass/main.scss public/main.css --no-source-map --no-stop-on-error",
+    "deploy": "gh-pages -d public -b gh-pages -t",
+    "publish": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,7 @@
     "sass": "^1.32.4"
   },
   "dependencies": {
-    "esbuild": "^0.8.33"
+    "esbuild": "^0.8.33",
+    "gh-pages": "^3.2.3"
   }
 }

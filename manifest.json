@@ -1,0 +1,28 @@
+{
+    "name": "Community Fest and Code",
+    "short_name": "Comfeco",
+    "description": "Participa del primer festival de código en hispanoamérica hecho por desarrolladores, para desarrolladores",
+    "background_color": "#EDEDED",
+    "theme_color": "#69156A",
+    "display": "minimal-ui",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "./images/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./images/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "./images/maskable_icon.png",
+            "sizes": "196x196",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "prefer_related_applications": false
+}

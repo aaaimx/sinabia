@@ -57,7 +57,16 @@
         <header class="header">
             <img src="./images/logo.png" width="300px" alt="Logo" />
             <p class="header__title">2do Simposio Nacional de Bioingenieria e Inteligencia Artificial</p>
-            <a rel="noopener noreferrer" target="_blank" class="btn btn__fill" href="">Registrarme</a>
+            <a
+                input
+                type="button"
+                value="Mensaje"
+                onclick="mensaje()"
+                rel="noopener noreferrer"
+                class="btn btn__fill"
+                href=""
+                >Registrarme
+            </a>
         </header>
         <hr class="header__separator" />
         <section class="hero">
@@ -130,7 +139,16 @@
                 <p class="awards__message">¿Quieres saber que nos espera este año?</p>
 
                 <button class="btn btn__fill">
-                    <a rel="noopener noreferrer" target="_blank" href="">Ver programa</a>
+                    <a
+                        input
+                        type="button"
+                        value="Mensaje"
+                        onclick="mensaje()"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href=""
+                        >Ver programa</a
+                    >
                 </button>
             </article>
         </section>
@@ -323,6 +341,11 @@
             </div>
         </footer>
     </body>
+    <script>
+        function mensaje() {
+            alert('PRÓXIMAMENTE !!!')
+        }
+    </script>
     <script src="./js/swiper.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/swiperleaders.js"></script>

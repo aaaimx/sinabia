@@ -1,16 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const dataSponsors = [
         {
-            name: 'IISE',
-            img: './images/sponsors/iise.png',
-            link: 'https://www.facebook.com/IISECAP783',
-        },
-        {
-            name: 'CESA ITM',
-            img: './images/sponsors/cesa.png',
-            link: 'https://www.facebook.com/CESAITMID',
-        },
-        {
             name: 'Rescate Zarigüeyal',
             img: './images/sponsors/rescate_zarigueyal.png',
             link: 'http://www.rescatezarigueyal.org/',
